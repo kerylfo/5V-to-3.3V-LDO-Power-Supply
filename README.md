@@ -1,1 +1,1 @@
-# usb-5v-to-3v3-regulator
+# 5V-to-3.3V-LDO-Power-Supply
