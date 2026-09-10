@@ -1,13 +1,19 @@
-# 5V to 3.3V Low-Voltage Power Regulation PCB
+# 5V to 3.3V LDO Power Supply Module (LT1117)
 
-## Project Summary
-Designed and routed a custom printed circuit board (PCB) for DC-DC power regulation, converting a 5V input to a stable 3.3V output using an LT1117 low-dropout (LDO) regulator. This architecture serves as a foundational building block for powering low-voltage logic circuits in embedded control systems and EV sensor arrays.
+A compact, 5V-to-3.3V linear regulator PCB designed in KiCad, validated with LTspice, and optimized for thermal and EMI performance.
 
-## Key Engineering Achievements
-* **Power System Design:** Captured the schematic for an LDO regulator circuit, selecting appropriate input/output decoupling capacitors to ensure stable voltage delivery.
-* **Thermal & EMI Management:** Engineered a continuous copper ground plane (GND pour) across the PCB to optimize thermal dissipation and reduce electromagnetic interference (EMI) for sensitive control logic.
-* **PCB Layout & Routing:** Transitioned the schematic to physical board layout, strategically placing a mix of surface-mount (SMD) and through-hole components to minimize trace impedance.
-* **Design Verification:** Diagnosed and resolved netlist synchronization issues, eliminating floating connections and isolated copper islands.
+![3D PCB Render](docs/board_3d.png)
 
-## Visuals
-*(Upload your 3D board screenshot here)*
+## Specifications
+* **Input Voltage:** 5.0V
+* **Output Voltage:** 3.3V DC
+* **Regulator:** LT1117-3.3 (SOT-223)
+* **Power Trace Width:** 0.2 mm
+* **Grounding:** Continuous bottom ground plane (`B.Cu`) with low-impedance via stitching
+
+## Bill of Materials
+| Ref | Qty | Part | Footprint |
+| :--- | :--- | :--- | :--- |
+| U1 | 1 | LT1117-3.3 | SOT-223 |
+| C1, C2 | 2 | 10µF Capacitor | 0805 |
+| R1 | 1 | 330Ω Resistor | 0805 |
