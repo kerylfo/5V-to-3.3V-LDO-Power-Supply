@@ -2,7 +2,7 @@
 
 A compact, 5V-to-3.3V linear regulator PCB designed in KiCad, validated with LTspice, and optimized for thermal and EMI performance.
 
-![3D PCB Render](docs/board_3d.png)
+![3D PCB Render](5V-3.3V-PowerSupply.png)
 
 ## Specifications
 * **Input Voltage:** 5.0V
